@@ -33,7 +33,7 @@ export default function Footer() {
                 📅 Randevu Al →
               </button>
             </div>
-            <div style={{ fontSize: '13px', color: '#6b6b6b' }}>✉️ info@fatihemincakiroglu.com</div>
+            <a href="mailto:info@fatihemincakiroglu.com" style={{ fontSize: '13px', color: '#6b6b6b', textDecoration: 'none' }}>✉️ info@fatihemincakiroglu.com</a>
             <div style={{ fontSize: '13px', color: '#6b6b6b', marginTop: '6px' }}>⏰ Pzt–Cum 09:00–18:00</div>
           </div>
 
@@ -87,7 +87,7 @@ export default function Footer() {
           <div>
             <div style={{ fontSize: '11px', color: '#4a4540', fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '16px' }}>SOSYAL</div>
             {[
-              { label: 'LinkedIn', url: 'https://linkedin.com/in/fatihemincakiroglu', icon: '🔗' },
+              { label: 'LinkedIn', url: 'https://www.linkedin.com/in/fatihemincakiroglu/', icon: '🔗' },
               { label: 'Twitter / X', url: 'https://twitter.com/fatihemincakiroglu', icon: '𝕏' },
               { label: 'Instagram', url: 'https://instagram.com/fatihemincakiroglu', icon: '📸' },
               { label: 'YouTube', url: 'https://youtube.com', icon: '▶' },
