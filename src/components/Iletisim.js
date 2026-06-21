@@ -77,7 +77,7 @@ export default function Iletisim() {
                   <span>✉️</span> info@fatihemincakiroglu.com
                 </a>
                 <div style={{ display: 'flex', gap: '10px', color: '#9a9a9a', fontSize: '14px', marginBottom: '12px' }}>
-                  <span>📍</span> Maslak, İstanbul
+                  <span>📍</span> İstanbul
                 </div>
                 <div style={{ display: 'flex', gap: '10px', color: '#9a9a9a', fontSize: '14px', marginBottom: '16px' }}>
                   <span>⏰</span> Pzt–Cum 09:00–18:00
