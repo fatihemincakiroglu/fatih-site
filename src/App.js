@@ -7,6 +7,11 @@ import BlogPost from './components/BlogPost';
 import Rehber from './components/Rehber';
 import SSS from './components/SSS';
 import Randevu from './components/Randevu';
+import Fiyatlandirma from './components/Fiyatlandirma';
+import Araclar from './components/Araclar';
+import VakaCalismasi from './components/VakaCalismasi';
+import Hakkimda from './components/Hakkimda';
+import ExitPopup from './components/ExitPopup';
 import Footer from './components/Footer';
 
 function App() {
@@ -23,13 +28,18 @@ function App() {
       <Navbar scrolled={scrolled} />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/hakkimda" element={<Hakkimda />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/rehber" element={<Rehber />} />
         <Route path="/sss" element={<SSS />} />
         <Route path="/randevu" element={<Randevu />} />
+        <Route path="/fiyatlandirma" element={<Fiyatlandirma />} />
+        <Route path="/araclar" element={<Araclar />} />
+        <Route path="/vakalar" element={<VakaCalismasi />} />
       </Routes>
       <Footer />
+      <ExitPopup />
     </>
   );
 }
