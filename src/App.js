@@ -26,6 +26,7 @@ import GeoRehberi from './components/GeoRehberi';
 import AiSozluk from './components/AiSozluk';
 import ExitPopup from './components/ExitPopup';
 import Footer from './components/Footer';
+import CanonicalTag from './components/CanonicalTag';
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -38,27 +39,24 @@ function App() {
 
   return (
     <>
+      <CanonicalTag />
       <Navbar scrolled={scrolled} />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* Hizmetler */}
         <Route path="/hizmetler" element={<HizmetlerPage />} />
         <Route path="/seo" element={<SeoPage />} />
         <Route path="/icerik" element={<IcerikPage />} />
         <Route path="/performans" element={<PerformansPage />} />
         <Route path="/geo" element={<GeoPage />} />
         <Route path="/backlink" element={<BacklinkPage />} />
-        {/* Hakkımda */}
         <Route path="/hakkimda" element={<Hakkimda />} />
         <Route path="/referanslar" element={<Referanslar />} />
         <Route path="/vakalar" element={<VakaCalismasi />} />
-        {/* Kaynaklar */}
         <Route path="/kaynaklar" element={<KaynaklarPage />} />
         <Route path="/seo-rehberi" element={<SeoRehberi />} />
         <Route path="/geo-rehberi" element={<GeoRehberi />} />
         <Route path="/ai-sozluk" element={<AiSozluk />} />
         <Route path="/sss" element={<SSS />} />
-        {/* Diğer */}
         <Route path="/araclar" element={<Araclar />} />
         <Route path="/rehber" element={<Rehber />} />
         <Route path="/rehber/:slug" element={<RehberPost />} />
